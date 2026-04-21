@@ -3,21 +3,27 @@
   "displayName": "Gentle Daylight",
   "description": "A soft light theme designed to reduce eye strain",
   "version": "0.0.1",
-  "publisher": "your-name",
+  "publisher": "krahd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-name/github-light-custom-theme.git"
+    "url": "https://github.com/krahd/gentle-daylight-theme.git"
   },
-  "homepage": "https://github.com/your-name/github-light-custom-theme#readme",
+  "homepage": "https://github.com/krahd/gentle-daylight-theme#readme",
   "bugs": {
-    "url": "https://github.com/your-name/github-light-custom-theme/issues"
+    "url": "https://github.com/krahd/gentle-daylight-theme/issues"
   },
   "author": {
-    "name": "Your Name"
+    "name": "krahd"
   },
   "engines": {
     "vscode": "^1.60.0"
   },
+  "files": [
+    "themes/**",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "categories": [
     "Themes"
   ],
