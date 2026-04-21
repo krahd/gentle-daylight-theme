@@ -1,6 +1,10 @@
 # Gentle Daylight — A soft light theme designed to reduce eye strain
 
 Gentle Daylight is a minimal light theme built from your `workbench.colorCustomizations` aimed at reducing eye strain while coding.
+Get it on the Visual Studio Marketplace: [Get it on the Marketplace](https://marketplace.visualstudio.com/items?itemName=krahd.gentle-daylight-theme) — install with `code --install-extension krahd.gentle-daylight-theme`.
+## Screenshot
+
+![Gentle Daylight screenshot](images/screenshot1.jpg)
 
 Install and package:
 
