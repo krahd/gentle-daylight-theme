@@ -18,12 +18,6 @@
   "engines": {
     "vscode": "^1.60.0"
   },
-  "files": [
-    "themes/**",
-    "README.md",
-    "LICENSE",
-    "package.json"
-  ],
   "categories": [
     "Themes"
   ],
