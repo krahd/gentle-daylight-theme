@@ -3,7 +3,7 @@
 
 Gentle Daylight is a minimal light theme built from your `workbench.colorCustomizations` aimed at reducing eye strain while coding.
 
-Get it on the Visual Studio Marketplace: [Get it on the Marketplace](https://marketplace.visualstudio.com/items?itemName=krahd.gentle-daylight-theme)
+[Get it on the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=krahd.gentle-daylight-theme)
 
 ## Preview
 
