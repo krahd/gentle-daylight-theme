@@ -1,0 +1,21 @@
+# Node
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# VS Code
+.vscode
+.vscodeignore
+
+# Packaging
+*.vsix
+
+# Local files
+accessibility-report.txt
+audit_theme.py
+*.pyc
+__pycache__
+.DS_Store
