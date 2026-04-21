@@ -1,23 +1,60 @@
-# Gentle Daylight — A soft light theme designed to reduce eye strain
+# Gentle Daylight (VS Code theme)
+**A soft light VS Code theme designed to reduce eye strain**
 
 Gentle Daylight is a minimal light theme built from your `workbench.colorCustomizations` aimed at reducing eye strain while coding.
 
-Get it on the Visual Studio Marketplace: [Get it on the Marketplace](https://marketplace.visualstudio.com/items?itemName=krahd.gentle-daylight-theme) — install with `code --install-extension krahd.gentle-daylight-theme`.
+Get it on the Visual Studio Marketplace: [Get it on the Marketplace](https://marketplace.visualstudio.com/items?itemName=krahd.gentle-daylight-theme)
 
-
-## Screenshot
+## Preview
 
 ![Gentle Daylight screenshot](images/screenshot1.jpg)
 
-Install and package:
+## Features
+
+- Soft, low-contrast UI and editor colors
+- Readable syntax color choices
+- Lightweight and unobtrusive
+
+## Installation
+
+From the Marketplace:
 
 ```bash
-# (optional) install packaging tools
-npm install -g yo generator-code @vscode/vsce
-
-# package a VSIX for publishing
-cd vscode-github-light-theme
-npx -y @vscode/vsce package
+code --install-extension krahd.gentle-daylight-theme
 ```
 
-To test locally, open the folder in VS Code and run the `Developer: Reload Window` command, or install the produced `.vsix` via `Extensions: Install from VSIX...`.
+From a local VSIX (packaged):
+
+```bash
+npx -y @vscode/vsce package
+code --install-extension gentle-daylight-theme-0.1.2.vsix
+```
+
+## Activate the theme
+
+1. Open the Command Palette (Ctrl/Cmd+Shift+P)
+2. Run `Preferences: Color Theme`
+3. Select `Gentle Daylight`
+
+## Customize
+
+Example `settings.json` snippet:
+
+```json
+"workbench.colorCustomizations": {
+	"editor.background": "#fbfbfb",
+	"editor.foreground": "#2b2b2b"
+}
+```
+
+## Contributing
+
+Contributions are welcome — open an issue or submit a pull request at https://github.com/krahd/gentle-daylight-theme
+
+## Support
+
+Report bugs and request features on GitHub: https://github.com/krahd/gentle-daylight-theme/issues
+
+## License
+
+See `LICENSE` for license details.
