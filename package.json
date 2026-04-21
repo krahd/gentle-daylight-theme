@@ -1,0 +1,36 @@
+{
+  "name": "gentle-daylight-theme",
+  "displayName": "Gentle Daylight",
+  "description": "A soft light theme designed to reduce eye strain",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-name/github-light-custom-theme.git"
+  },
+  "homepage": "https://github.com/your-name/github-light-custom-theme#readme",
+  "bugs": {
+    "url": "https://github.com/your-name/github-light-custom-theme/issues"
+  },
+  "author": {
+    "name": "Your Name"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gentle Daylight",
+        "uiTheme": "vs",
+        "path": "./themes/github-light-custom-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  }
+}

@@ -1,0 +1,44 @@
+Accessibility audit for theme: Gentle Daylight
+
+Summary of found UI colors:
+ - editor.background: #ee33ee
+ - sideBar.background: #dd77dd
+ - activityBar.background: #ee33ee
+ - panel.background: #dd77dd
+ - terminal.background: #ddccdd
+ - tab.activeBackground: #ee33ee
+
+Contrast with black/white (WCAG):
+ - editor.background: #ee33ee | black: 6.34x (AA) | white: 3.31x (fail)
+ - sideBar.background: #dd77dd | black: 7.76x (AA) | white: 2.71x (fail)
+ - activityBar.background: #ee33ee | black: 6.34x (AA) | white: 3.31x (fail)
+ - panel.background: #dd77dd | black: 7.76x (AA) | white: 2.71x (fail)
+ - terminal.background: #ddccdd | black: 13.76x (AA) | white: 1.53x (fail)
+ - tab.activeBackground: #ee33ee | black: 6.34x (AA) | white: 3.31x (fail)
+
+Contrast vs editor.background (#ee33ee):
+ - sideBar.background (#dd77dd): 1.22x (LOW <3)
+ - activityBar.background (#ee33ee): 1.00x (LOW <3)
+ - panel.background (#dd77dd): 1.22x (LOW <3)
+ - terminal.background (#ddccdd): 2.17x (LOW <3)
+ - tab.activeBackground (#ee33ee): 1.00x (LOW <3)
+
+Issues and recommendations:
+ - `editor.foreground`: black (#000000) meets AA (6.34x). Consider setting `editor.foreground` explicitly.
+ - Low separation: `sideBar.background` (#dd77dd) vs `editor.background` (#ee33ee) contrast 1.22x — recommend increasing separation to >=3:1.
+    Suggested `sideBar.background`: #fcf1fc (change 0.30, new contrast 3.02x)
+ - Low separation: `panel.background` (#dd77dd) vs `editor.background` (#ee33ee) contrast 1.22x — recommend increasing separation to >=3:1.
+    Suggested `panel.background`: #fcf1fc (change 0.30, new contrast 3.02x)
+ - Low separation: `activityBar.background` (#ee33ee) vs `editor.background` (#ee33ee) contrast 1.00x — recommend increasing separation to >=3:1.
+    Suggested `activityBar.background`: #740a74 (change -0.32, new contrast 3.11x)
+ - Low separation: `terminal.background` (#ddccdd) vs `editor.background` (#ee33ee) contrast 2.17x — recommend increasing separation to >=3:1.
+    Suggested `terminal.background`: #f8f4f8 (change 0.13, new contrast 3.04x)
+ - Low separation: `tab.activeBackground` (#ee33ee) vs `editor.background` (#ee33ee) contrast 1.00x — recommend increasing separation to >=3:1.
+    Suggested `tab.activeBackground`: #740a74 (change -0.32, new contrast 3.11x)
+
+Token colors: none provided. Ensure your syntax/token colors have sufficient contrast against `editor.background`. Add `tokenColors` entries or `editor.foreground` to guarantee readable code tokens.
+
+Automated checks done. Manual review recommended for:
+ - Tab text/icon legibility (active vs inactive).
+ - Activity Bar and Side Bar icon contrast and focus states.
+ - Terminal ANSI colors (if overridden) against `terminal.background`.
